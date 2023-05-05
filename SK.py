@@ -25,7 +25,7 @@ except:pass
 
 usr=[]
 try:
-	xd=requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/ua.txt').text.splitlines()
+	xd=requests.get('https://raw.githubusercontent.com/SHaYanxALyan/SA/main/sk.txt').text.splitlines()
 	for us in xd:
 		usr.append(us)
 except: pass
@@ -148,7 +148,7 @@ logo=("""\033[1;91m
 |  $$$$$$/| $$ \  $$
  \______/ |__/  \__/    XD
 \033[1;37m--------------------------------------------------
-[~] Author   : Ramzan Tanha
+[~] Author   : SK JoKaR
 [~] Facebook : Shayan khan
 [~] Tool     : Paid
 [~] Version  : 30.0
@@ -279,7 +279,7 @@ def menu():
 				#dz._login()
 				exit()
 			elif xd in ['4','04']:
-				os.system('xdg-open https://wa.me/+923223355973?text=')
+				os.system('xdg-open https://wa.me/+923159620940?text=')
 				menu()
 			elif xd in ['0','00']:
 				exit(' Thanks for use 🥰 ')
